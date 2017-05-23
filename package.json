@@ -28,8 +28,8 @@
         "babel-eslint":                   "~7.2.3"
     },
     "dependencies" : {
-        "fs-promise":                     "~2.0.2",
-        "js-yaml":                        "~3.8.3"
+        "mz":                             "~2.6.0",
+        "js-yaml":                        "~3.8.4"
     },
     "engines": {
         "node":                           ">=7.6.0"
