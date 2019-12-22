@@ -21,10 +21,10 @@ module.exports = async function (filenames, opts = {}, report = { sources: {}, f
             opts.progress(i / filenames.length, `linting YAML: ${filenames[i]}`)
 
         /*  read source code  */
-        let source = await fs.readFile(filenames[i], "utf8")
+        const source = await fs.readFile(filenames[i], "utf8")
 
         /*  determine name  */
-        let name = path.relative(process.cwd(), filenames[i])
+        const name = path.relative(process.cwd(), filenames[i])
 
         /*  lint the source code  */
         try {
